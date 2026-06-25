@@ -1,0 +1,214 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+
+Prediction Result
+
+</title>
+
+
+<link rel="stylesheet"
+
+href="{{url_for('static',
+
+filename='css/style.css')}}">
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="card">
+
+
+
+<h1>
+
+Complaint Analysis
+
+
+</h1>
+
+
+
+<p>
+
+
+Category :
+
+{{prediction}}
+
+
+</p>
+
+
+
+
+<p>
+
+
+Sentiment :
+
+
+{{sentiment}}
+
+
+
+</p>
+
+
+
+<p>
+
+
+Priority :
+
+
+{{priority}}
+
+
+</p>
+
+
+
+<a href="/">
+
+
+Back
+
+
+</a>
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Rail Madad AI - Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+    <h1>
+
+        Complaint Analysis Report
+
+    </h1>
+
+
+    <hr>
+
+
+
+    <p>
+
+        <strong>Category :</strong>
+
+        {{ prediction }}
+
+    </p>
+
+
+
+    <p>
+
+        <strong>Sentiment :</strong>
+
+        {{ sentiment }}
+
+    </p>
+
+
+
+
+    <p>
+
+        <strong>Priority :</strong>
+
+        {{ priority }}
+
+    </p>
+
+
+
+    <p>
+
+        <strong>Suggested Solution :</strong>
+
+        {{ solution }}
+
+    </p>
+
+
+
+
+    <br>
+
+
+
+    <a href="/">
+
+        <button>
+
+            Back to Complaint Form
+
+        </button>
+
+    </a>
+
+
+
+
+    <a href="/dashboard">
+
+        <button>
+
+            Dashboard
+
+        </button>
+
+    </a>
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
